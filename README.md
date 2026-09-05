@@ -18,7 +18,7 @@ To keep this sprawling library completely navigable and predictable, everything 
 
 # Structure of this TIL repository
 ```
-elliria_til/
+til/
 │
 ├── README.md
 │
@@ -69,7 +69,7 @@ elliria_til/
 
 # Structure of this TIL repository
 ```
-elliria_til/
+til/
 │
 ├── README.md                  # Introduction, Table of Contents, index, and skeleton
 │
