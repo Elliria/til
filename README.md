@@ -1,4 +1,5 @@
-# 🌍 Elliria's Digital Garden: A Multi-Disciplinary TIL Archive
+# 🌍 Elliria's TIL
+## A Multi-Disciplinary Archive
 Welcome! This repository, inspired by other TIL repositories like it that were arguably popularized by [Simon Willison's TIL on GitHub](https://github.com/simonw/til), is a globally-accessible, meticulously-organized external brain that was originally written for an audience of one. It serves as my personal **Today I Learned (TIL)** database — a collection of snippets, system blueprints, and practical breakthroughs spanning a wide array of domains and topics. Perhaps you'll find it useful, too.
 
 Because curiosity doesn't stop at a single category, this archive has no strict thematic boundaries. It reflects a lifelong pursuit of bottom-up systematizing, where crafts, physics, sciences, software engineering, and more are treated with equal weight and respect.
