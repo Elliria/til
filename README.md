@@ -17,7 +17,7 @@ To keep this sprawling library completely navigable and predictable, everything 
 ### 🐍 Python
 * [Implicit String Literal Concatenation](https://github.com/Elliria/til/blob/master/python/string_concatenation_implicit.md) — Documenting compile-time versus runtime boundaries using implicit (`()`) and explicit (`\`) line continuations.
 
-# Structure of this TIL repository
+## Structure of this TIL repository
 ```
 til/
 │
@@ -68,7 +68,7 @@ til/
 * [VM Bookmarks and States](./virtualbox/vm_notes.md) — Operational strategies for tracking environmental configurations inside virtual environments.
 ```
 
-# Structure of this TIL repository
+## Structure of this TIL repository
 ```
 til/
 │
