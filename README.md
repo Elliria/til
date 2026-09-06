@@ -15,7 +15,7 @@ To keep this sprawling library completely navigable and predictable, everything 
 ## 🗺️ Index
 
 ### 🐍 Python
-* [Implicit String Literal Concatenation](https://github.com/Elliria/til/blob/master/python/string_literal_concatenation.md) — Documenting compile-time versus runtime boundaries using implicit (`()`) and explicit (`\`) line continuations.
+* [Implicit String Literal Concatenation](https://github.com/Elliria/til/blob/master/python/implicit_string_literal_concatenation.md) — Documenting compile-time versus runtime boundaries using implicit (`()`) and explicit (`\`) line continuations.
 
 ## Structure of this TIL repository
 ```
@@ -24,7 +24,7 @@ til/
 ├── README.md
 │
 └── python/
-    └── string_literal_concatenation.md
+    └── implicit_string_literal_concatenation.md
 ```
 
 <!-- For future design reference as this thing grows:
@@ -58,7 +58,7 @@ til/
 * [Non-Slip Rulers](./life-hacks/non-slip_ruler.md) — A simple, friction-based stabilization trick to prevent rulers from shifting during active use.
 
 ### 🐍 Python
-* [Implicit String Literal Concatenation](./python/string_literal_concatenation.md) — Documenting compile-time versus runtime boundaries using implicit (`()`) and explicit (`\`) line continuations.
+* [Implicit String Literal Concatenation](./python/implicit_string_literal_concatenation.md) — Documenting compile-time versus runtime boundaries using implicit (`()`) and explicit (`\`) line continuations.
 * [wxPython Layouts](./python/wxpython_layouts.md) — Notes on window management behaviors, layout constraints, and event loops.
 
 ### 🧪 Science
@@ -88,8 +88,8 @@ til/
 │   └── non-slip_ruler.md           # How to prevent a ruler from shifting
 │
 ├── python/
-│   ├── string_literal_concatenation.md # The glorious string discovery!
-│   └── wxpython_layouts.md             # wxPython window management & behaviors
+│   ├── implicit_string_literal_concatenation.md # The glorious string discovery!
+│   └── wxpython_layouts.md                      # wxPython window management & behaviors
 │
 ├── science/
 │   └── emulsifiers_explained.md # How emulsifiers bind oil and water
