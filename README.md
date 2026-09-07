@@ -6,22 +6,29 @@ Because curiosity doesn't stop at a single category, this archive has no strict 
 
 To keep this sprawling library completely navigable and predictable, everything here follows these golden rules:
 * **Alphabetization:** The categories and the index below are maintained in alphabetical order.
+* **Categories:** Each category links to its folder in the repository.
+* **Index:** This is arranged by category and links to the individual files in each category. Note that if a file fits into more than one category, it will be duplicated under all applicable categories in the index.
 * **Synchronization:** Local additions or edits are pushed to this repository immediately to ensure that this online archive matches my local archives.
 * **Tags:** Each file contains a line of tags, each of which starts with **tag-** to make searching the files and identifying multiple categories easier. Note that you can [search this archive](https://github.com/search?q=repo%3Aelliria%2Ftil&type=code) if you're logged in to GitHub.
 
-## 🗺️ Categories
-* [Python](#-python)
+## Categories
+* [Bash](https://github.com/Elliria/til/tree/master/bash)
+* [Python](https://github.com/Elliria/til/tree/master/python)
 
-## 🗺️ Index
+## Index
+* **Bash:**
+  * [Animated Spinner In Bash](https://github.com/Elliria/til/blob/master/bash/animated_spinner_bash.md) — Documenting two versions of a unique and interesting animated spinner in Bash.
+* **Python:**
+  * [Implicit String Literal Concatenation](https://github.com/Elliria/til/blob/master/python/implicit_string_literal_concatenation.md) — Documenting compile-time versus runtime boundaries using implicit (`()`) and explicit (`\`) line continuations.
 
-### 🐍 Python
-* [Implicit String Literal Concatenation](https://github.com/Elliria/til/blob/master/python/implicit_string_literal_concatenation.md) — Documenting compile-time versus runtime boundaries using implicit (`()`) and explicit (`\`) line continuations.
-
-## Structure of this TIL repository
+### Structure of this TIL repository
 ```
 til/
 │
 ├── README.md
+│
+├── bash/
+│   └── animated_spinner_bash.md
 │
 └── python/
     └── implicit_string_literal_concatenation.md
