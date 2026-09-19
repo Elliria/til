@@ -25,15 +25,13 @@ To keep this sprawling library completely navigable and predictable, everything 
 ### Structure of this TIL repository
 ```
 til/
-  │
-  ├── README.md
-  │
   ├── bash/
   │   └── animated_spinner_bash.md
-  │
-  └── python/
-      ├── exception_flow.md
-      └── implicit_string_literal_concatenation.md
+  ├── python/
+  |   ├── exception_flow.md
+  |   └── implicit_string_literal_concatenation.md
+  ├── LICENSE
+  └── README.md
 ```
 
 <!-- For future design reference as this thing grows:
