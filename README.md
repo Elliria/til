@@ -19,6 +19,7 @@ To keep this sprawling library completely navigable and predictable, everything 
 * **Bash:**
   * [Animated Spinner In Bash](https://github.com/Elliria/til/blob/master/bash/animated_spinner_bash.md) — Documenting two versions of a unique and interesting animated spinner in Bash.
 * **Python:**
+  * [Exception Flow](https://github.com/Elliria/til/blob/master/python/exception_flow.md) — Documenting **ExceptionGroup** objects and **except\* clauses** with examples for contrast with traditional error-handling.
   * [Implicit String Literal Concatenation](https://github.com/Elliria/til/blob/master/python/implicit_string_literal_concatenation.md) — Documenting compile-time versus runtime boundaries using implicit (`()`) and explicit (`\`) line continuations.
 
 ### Structure of this TIL repository
@@ -31,6 +32,7 @@ til/
   │   └── animated_spinner_bash.md
   │
   └── python/
+      ├── exception_flow.md
       └── implicit_string_literal_concatenation.md
 ```
 
