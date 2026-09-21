@@ -4,12 +4,12 @@
 A directory-wide code-auditor that finds and displays errors in your Python files.
 
 ## Overview
-The **hygiene.py** script below uses a session-manager to crawl the relevant directory recursively to find and examine all of its Python files for errors. It avoids the traditional bottleneck of stopping on the first error by using a context-manager to intercept the errors, gather all of them into a list, inject that list into an **ExceptionGroup**, raise them concurrently from there, handle them without crashing, and display the result in your terminal window. Two modes of operation are provided, with SAFE MODE as the default and ACTIVE MODE being available for power-users.
+The **hygiene.py** script below crawls the relevant directory recursively to find and examine all of its Python files for errors. It avoids the traditional bottleneck of stopping on the first error by intercepting the errors, gathering all of them into a list, injecting that list into an **ExceptionGroup**, raising them concurrently from there, handling them without crashing, and displaying the result in your terminal window. Two modes of operation are provided, with SAFE MODE as the default and ACTIVE MODE being available for power-users.
 
 ## Features
+* Automated concurrent error-raising and cleanup.
 * Detailed mode notifications that identify the current mode.
 * Paths appended to sub-exceptions to smooth out traceback noise and help with navigation when fixing errors.
-* The context manager binds the traversal life-cycles to automated cleanup and error-raising.
 * Unhandled groups terminate the interpreter with a non-zero exit-status.
 
 ## ⚠️ CRITICAL operational modes and best practice
@@ -50,14 +50,14 @@ less careful and more informative in ACTIVE MODE if you like.
 
 USAGE IN SAFE MODE:
 # Run it on the current directory: hygiene.py
-# Run it on a subdirectory off of the current directory: hygiene.py ./foo
+# Run it on a sub-directory off of the current directory: hygiene.py ./foo
 # Run it on the specified directory: hygiene.py /home/username/foo
 
 USAGE IN ACTIVE MODE:
 # Run it on the current directory: hygiene.py -r
 # Run it on the current directory: hygiene.py --run
-# Run it on a subdirectory off of the current directory: hygiene.py -r ./foo
-# Run it on a subdirectory off of the current directory: hygiene.py --run ./foo
+# Run it on a sub-directory off of the current directory: hygiene.py -r ./foo
+# Run it on a sub-directory off of the current directory: hygiene.py --run ./foo
 # Run it on the specified directory: hygiene.py -r /home/username/foo
 # Run it on the specified directory: hygiene.py --run /home/username/foo
 """
@@ -67,7 +67,9 @@ class AuditSession:
     into an ExceptionGroup at the end.
     """
     def __init__(self, session_name="Repository Audit"):
+        # Create a session:
         self.session_name = session_name
+        # Create a list to hold errors:
         self.errors = []
 
     def __enter__(self):
@@ -75,26 +77,30 @@ class AuditSession:
         return self
 
     def __exit__(self, exc_type, exc_val, exc_tb):
-        # If a crash happens inside the block, Python sends it here:
+        # If a crash happens inside the block:
         if exc_val is not None:
+            # Add the error to the list:
             self.errors.append(exc_val)
-            # Returning True tells Python not to crash, but to keep going:
+            # Tell Python to keep going:
             return True 
         
-        # When the block ends naturally, check if any errors were collected:
+        # When the block ends, check if any errors were collected:
         if self.errors:
+            # Create an ExceptionGroup populated with the list and raise the group:
             raise ExceptionGroup(f"❌ {self.session_name} failed with sub-exceptions:", self.errors)
 
     def log_failure(self, exception_instance):
         """Allows manually adding an error without needing a literal code crash."""
+        # Add the contents of the errors list to the ExceptionGroup:
         self.errors.append(exception_instance)
 
-# Fire up a custom audit-session context-manager:
+# Create an audit-session context-manager:
 def audit_directory(target_dir=".", execute_mode=False):
     """Scans the specified directory for all .py files, toggling between
     SAFE MODE and ACTIVE MODE based on whether or not arguments are
     provided on the command-line.
     """
+    # Run in SAFE MODE by default unless ACTIVE MODE has been specified:
     mode_label = "ACTIVE MODE" if execute_mode else "SAFE MODE"
     print(f"📁 Initializing directory-wide [{mode_label}] sweep for: {os.path.abspath(target_dir)}")
     
