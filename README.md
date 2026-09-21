@@ -1,5 +1,5 @@
 # 🌍 Elliria's TIL
-## A Multi-Disciplinary Archive
+## About
 Welcome! This repository, inspired by other TIL repositories like it that were arguably popularized by [Simon Willison's TIL on GitHub](https://github.com/simonw/til), is a globally-accessible, meticulously-organized external brain that was originally written for an audience of one. It serves as my personal **Today I Learned (TIL)** database — a collection of snippets, system blueprints, and practical breakthroughs spanning a wide array of domains and topics. Perhaps you'll find it useful, too.
 
 Because curiosity doesn't stop at a single category, this archive has no strict thematic boundaries. It reflects a lifelong pursuit of bottom-up systematizing, where crafts, physics, sciences, software engineering, and more are treated with equal weight and respect.
@@ -21,15 +21,17 @@ To keep this sprawling library completely navigable and predictable, everything 
 * **Python:**
   * [Exception Flow](https://github.com/Elliria/til/blob/master/python/exception_flow.md) — Documenting **ExceptionGroup** objects and **except\* clauses** with examples for contrast with traditional error-handling.
   * [Implicit String Literal Concatenation](https://github.com/Elliria/til/blob/master/python/implicit_string_literal_concatenation.md) — Documenting compile-time versus runtime boundaries using implicit (`()`) and explicit (`\`) line continuations.
+  * [Python Code Auditor](https://github.com/Elliria/til/blob/master/python/python_code_auditor.md) — A directory-wide code-auditor that finds and displays errors in your Python files.
 
-### Structure of this TIL repository
+## Structure of this repository
 ```
 til/
   ├── bash/
   │   └── animated_spinner_bash.md
   ├── python/
   |   ├── exception_flow.md
-  |   └── implicit_string_literal_concatenation.md
+  |   ├── implicit_string_literal_concatenation.md
+  |   └── python_code_auditor.md
   ├── LICENSE
   └── README.md
 ```
