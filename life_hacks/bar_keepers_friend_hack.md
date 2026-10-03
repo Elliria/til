@@ -10,5 +10,5 @@ Total win!
 Come to think of it, those multi-pack pet-food lids often come in cheap packages of three at the grocery store, which is a perfect bonus win. Although I don't currently have an Ajax or Comet can on hand to photograph, all three brands use identical industry-standard 21-ounce canister diameters. A single three-pack of lids will perfectly cap your entire collection! 
 
 Feel free to try it out on yours and share the results with the rest of us in the [Discussions](https://github.com/Elliria/til/discussions) section.
-
+-----
 **Tags:** tag-cleaning tag-household tag-life_hack
