@@ -14,6 +14,7 @@ To keep this sprawling library completely navigable and predictable, everything 
 ## Categories
 * [Bash](#bash)
 * [Life Hacks](#life-hacks)
+* [Linux](#linux)
 * [Python](#python)
 
 ## Index
@@ -23,7 +24,10 @@ To keep this sprawling library completely navigable and predictable, everything 
 
 ### Life Hacks
 * [Bar Keeper's Friend Hack](life_hacks/bar_keepers_friend_hack.md) — Using pet-food can covers for cleansers.
- 
+
+### Linux
+* [Compose Key Macros](linux/compose_key_macros.md) — Use a compose-key to type special characters, symbols, or custom text strings in Linux.
+
 ### Python
 * [Exception Flow](https://github.com/Elliria/til/blob/master/python/exception_flow.md) — Documenting **ExceptionGroup** objects and **except\* clauses** with examples for contrast with traditional error-handling.
 * [Implicit String Literal Concatenation](https://github.com/Elliria/til/blob/master/python/implicit_string_literal_concatenation.md) — Documenting compile-time versus runtime boundaries using implicit (`()`) and explicit (`\`) line continuations.
