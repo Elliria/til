@@ -107,4 +107,8 @@ except* Exception as gathered:
   📦 Error caught: TypeError
   📦 Error caught: ValueError
   📦 Error caught: ZeroDivisionError
-```
+  ```
+
+-----
+
+**Tags:** tag-error_handling tag-exceptiongroup tag-exceptions tag-python
