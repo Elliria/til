@@ -176,3 +176,7 @@ if __name__ == "__main__":
     # Call the engine with safety-switch passed along:
     audit_directory(target_path, execute_mode=execute_code)
 ```
+
+-----
+
+**Tags:**  tag-audit tag-code_quality tag-automation tag-exceptions tag-python
