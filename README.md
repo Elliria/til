@@ -12,98 +12,19 @@ To keep this sprawling library completely navigable and predictable, everything 
 * **Tags:** Each file contains a line of tags, each of which starts with **tag-** to make searching the files and identifying multiple categories easier. Note that you can [search this archive](https://github.com/search?q=repo%3Aelliria%2Ftil&type=code) if you're logged in to GitHub.
 
 ## Categories
-* [Bash](https://github.com/Elliria/til/tree/master/bash)
-* [Python](https://github.com/Elliria/til/tree/master/python)
+* [Bash](#bash)
+* [Life Hacks](#life-hacks)
+* [Python](#python)
 
 ## Index
-* **Bash:**
-  * [Animated Spinner In Bash](https://github.com/Elliria/til/blob/master/bash/animated_spinner_bash.md) — Documenting two versions of a unique and interesting animated spinner in Bash.
-* **Python:**
-  * [Exception Flow](https://github.com/Elliria/til/blob/master/python/exception_flow.md) — Documenting **ExceptionGroup** objects and **except\* clauses** with examples for contrast with traditional error-handling.
-  * [Implicit String Literal Concatenation](https://github.com/Elliria/til/blob/master/python/implicit_string_literal_concatenation.md) — Documenting compile-time versus runtime boundaries using implicit (`()`) and explicit (`\`) line continuations.
-  * [Python Code Auditor](https://github.com/Elliria/til/blob/master/python/python_code_auditor.md) — A directory-wide code-auditor that finds and displays errors in your Python files.
 
-## Structure of this repository
-```
-til/
-  ├── bash/
-  │   └── animated_spinner_bash.md
-  ├── python/
-  |   ├── exception_flow.md
-  |   ├── implicit_string_literal_concatenation.md
-  |   └── python_code_auditor.md
-  ├── LICENSE
-  └── README.md
-```
+### Bash
+* [Animated Spinner In Bash](https://github.com/Elliria/til/blob/master/bash/animated_spinner_bash.md) — Documenting two versions of a unique and interesting animated spinner in Bash.
 
-<!-- For future design reference as this thing grows:
----
-
-## 🗺️ Categories
-```
-* [Computer & Clipboard](#-computer--clipboard)
-* [Crafting](#-crafting)
-* [GitHub & Gists](#-github--gists)
-* [Life Hacks & Physics](#-lifehacks--physics)
-* [Python](#-python)
-* [Science](#-science)
-* [VirtualBox](#-virtualbox)
-```
----
-
-## 🗺️ Index
-```
-### 💻 Computer & Clipboard
-* [CLIPBOARD vs PRIMARY vs SECONDARY](./computer/clipboard_buffers.md) — Understanding the architectural differences between X11 selection buffers and the system clipboard.
-
-### 🧵 Crafting
-* [Short Thread Knots](./crafting/short_thread_knot.md) — A precise geometric technique for tying secure knots in 1" or shorter pieces of thread.
-
-### 🐙 GitHub & Gists
-* [Creative Lists](./github/creative_lists.md) — Advanced Markdown layout techniques for structuring tabular repositories.
-
-### 🧹 Life Hacks & Physics
-* [Highlighter Ink Removal](./life-hacks/highlighter_ink_removal.md) — Utilizing chemical properties to safely pull highlighter ink from delicate paper pages.
-* [Non-Slip Rulers](./life-hacks/non-slip_ruler.md) — A simple, friction-based stabilization trick to prevent rulers from shifting during active use.
-
-### 🐍 Python
-* [Implicit String Literal Concatenation](./python/implicit_string_literal_concatenation.md) — Documenting compile-time versus runtime boundaries using implicit (`()`) and explicit (`\`) line continuations.
-* [wxPython Layouts](./python/wxpython_layouts.md) — Notes on window management behaviors, layout constraints, and event loops.
-
-### 🧪 Science
-* [Emulsifiers Explained](./science/emulsifiers_explained.md) — A breakdown of molecular binders that bridge the gap between polar and non-polar compounds (oil and water).
-
-### 📦 VirtualBox
-* [VM Bookmarks and States](./virtualbox/vm_notes.md) — Operational strategies for tracking environmental configurations inside virtual environments.
-```
-
-## Structure of this TIL repository
-```
-til/
-│
-├── README.md                  # Introduction, Table of Contents, index, and skeleton
-│
-├── computer/
-│   └── clipboard_buffers.md
-│
-├── crafting/
-│   └── short_thread_knot.md   # How to tie a knot in 1" or shorter thread
-│
-├── github/
-│   └── creative_lists.md
-│
-├── life-hacks/
-│   ├── highlighter_ink_removal.md  # Removing highlighter ink from paper
-│   └── non-slip_ruler.md           # How to prevent a ruler from shifting
-│
-├── python/
-│   ├── implicit_string_literal_concatenation.md # The glorious string discovery!
-│   └── wxpython_layouts.md                      # wxPython window management & behaviors
-│
-├── science/
-│   └── emulsifiers_explained.md # How emulsifiers bind oil and water
-│
-└── virtualbox/
-    └── vm_notes.md
-```
--->
+### Life Hacks
+* [Bar Keeper's Friend Hack](life_hacks/bar_keepers_friend_hack.md) — Using pet-food can covers for cleansers.
+ 
+### Python
+* [Exception Flow](https://github.com/Elliria/til/blob/master/python/exception_flow.md) — Documenting **ExceptionGroup** objects and **except\* clauses** with examples for contrast with traditional error-handling.
+* [Implicit String Literal Concatenation](https://github.com/Elliria/til/blob/master/python/implicit_string_literal_concatenation.md) — Documenting compile-time versus runtime boundaries using implicit (`()`) and explicit (`\`) line continuations.
+* [Python Code Auditor](https://github.com/Elliria/til/blob/master/python/python_code_auditor.md) — A directory-wide code-auditor that finds and displays errors in your Python files.
