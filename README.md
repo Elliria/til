@@ -13,19 +13,25 @@ To maintain order in this sprawling collection:
 * [Life Hacks](#life-hacks)
 * [Linux](#linux)
 * [Python](#python)
+* [Software](#software)
 
 -----
 
 #### Bash
 * [Animated Spinner In Bash](https://github.com/Elliria/til/blob/master/bash/animated_spinner_bash.md) — Documenting two versions of a unique and interesting animated spinner in Bash.
+* [Nano Trailing White-space Indicators](software/nano_trailing_whitespace_indicators.md) — Force high-visibility green boxes for trailing spaces or tabs in **GNU nano**.
 
 #### Life Hacks
 * [Bar Keeper's Friend Hack](life_hacks/bar_keepers_friend_hack.md) — Using pet-food can covers for cleansers.
 
 #### Linux
 * [Compose Key Macros](linux/compose_key_macros.md) — Use a compose-key to type special characters, symbols, or custom text strings in Linux.
+* [Nano Trailing White-space Indicators](software/nano_trailing_whitespace_indicators.md) — Force high-visibility green boxes for trailing spaces or tabs in **GNU nano**.
 
 #### Python
 * [Exception Flow](https://github.com/Elliria/til/blob/master/python/exception_flow.md) — Documenting **ExceptionGroup** objects and **except\* clauses** with examples for contrast with traditional error-handling.
 * [Implicit String Literal Concatenation](https://github.com/Elliria/til/blob/master/python/implicit_string_literal_concatenation.md) — Documenting compile-time versus runtime boundaries using implicit (`()`) and explicit (`\`) line continuations.
 * [Python Code Auditor](https://github.com/Elliria/til/blob/master/python/python_code_auditor.md) — A directory-wide code-auditor that finds and displays errors in your Python files.
+
+#### Software
+* [Nano Trailing White-space Indicators](software/nano_trailing_whitespace_indicators.md) — Force high-visibility green boxes for trailing spaces or tabs in **GNU nano**.
