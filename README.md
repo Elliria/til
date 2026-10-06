@@ -10,6 +10,7 @@ To maintain order in this sprawling collection:
 
 ## Table of Contents
 * [Bash](#bash)
+* [Food](#food)
 * [Life Hacks](#life-hacks)
 * [Linux](#linux)
 * [Python](#python)
@@ -20,6 +21,9 @@ To maintain order in this sprawling collection:
 #### Bash
 * [Animated Spinner In Bash](https://github.com/Elliria/til/blob/master/bash/animated_spinner_bash.md) — Documenting two versions of a unique and interesting animated spinner in Bash.
 * [Nano Trailing White-space Indicators](software/nano_trailing_whitespace_indicators.md) — Force high-visibility green boxes for trailing spaces or tabs in **GNU nano**.
+
+### Food
+* [Parsnips](https://github.com/Elliria/til/blob/master/food/parsnips.md) — Description of a very unusual vegetable.
 
 #### Life Hacks
 * [Bar Keeper's Friend Hack](life_hacks/bar_keepers_friend_hack.md) — Using pet-food can covers for cleansers.
