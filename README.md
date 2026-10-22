@@ -15,7 +15,6 @@ To maintain order in this sprawling collection:
 * [Linux](#linux)
 * [Python](#python)
 * [Software](#software)
-* [Sphinx](#sphinx)
 
 -----
 
@@ -40,6 +39,3 @@ To maintain order in this sprawling collection:
 
 #### Software
 * [Nano Trailing White-space Indicators](software/nano_trailing_whitespace_indicators.md) — Force high-visibility green boxes for trailing spaces or tabs in **GNU nano**.
-
-#### Sphinx
-* TODO 👀
