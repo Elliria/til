@@ -13,6 +13,8 @@ wildcard = "Markdown file (*.md)|*.md|" \
 At first glance, it seems perfectly normal, but when I looked closely at that snippet, I spotted something rather unusual. This was **not** an ordinary **string concatenation** with an **explicit line continuation**, which would consist of **one** string on multiple lines with a backslash used to trigger **explicit line continuation**. Instead, this was **two** strings, each on separate lines with a backslash at the end of the first one!
 
 That didn't look valid to me because, with no comma, it sure looks like two distinct **strings** rather than a **tuple**. If you remove the backslash and bring the second line up, you get this strange-looking value (note the space between the two completely separate strings):
+
+That didn't look valid to me. If you remove the backslash and bring the second line up, you get this strange-looking value (note the space between the two completely separate strings). With no comma, it sure looks like two distinct **strings** rather than a **tuple**:
 ```python
 wildcard = "Markdown file (*.md)|*.md|" "HTML file (*.html)|*.html"
 ```
@@ -21,9 +23,9 @@ Joining two completely separate strings together with an **explicit line continu
 
 It gets even better. The backslash is **optional** if you surround the collection of strings in **parentheses**, which is the preferred [PEP 8](https://peps.python.org/pep-0008/#maximum-line-length) way to continue lines without backslashes. Even `("foo")` all by itself is a string, parentheses and all! When working with multiple strings, each can go on its own line and the backslash is simply **implied** without being there. This is called **implicit string literal concatenation**
 
-As icing on the cake, you can include one or more **variables** to be concatenated with the string(s). Because string-concatenation happens at compile-time, raw variables can't be placed directly next to string literals, but **f-strings** can, since they're evaluated as string literals during lexical analysis!
+As icing on the cake, you can include one or more **variables** to be concatenated along with the string(s). Because string-concatenation happens at compile-time, raw variables can't be placed directly next to string literals, but **f-strings** can, since they're evaluated as string-literals during lexical analysis!
 
-In every one of these cases, Python reads all of the strings as one single string-object.
+In every one of these cases, Python reads **all** of the strings as one single string-object.
 
 What an intriguing way to control white-space or separate chunks of text visually while Python keeps them together for you! This would be incredibly useful for long SQL queries, regex patterns, deep file-paths, or long URLS, where you want to keep your code readable without injecting accidental or unwanted white-space.
 
