@@ -13,7 +13,7 @@ Below, I'm exploring the **ExceptionGroup** object and the **except\* clause** b
 * **Example 1** demonstrates *the old way* using traditional **manual exceptions** and one or more traditional **except clauses**.
 * **Example 2** demonstrates *a hybrid way* using an **ExceptionGroup** and one or more traditional **except clauses**.
 * **Example 3** demonstrates *a hybrid way* using traditional **manual exceptions** and an **except\* clause**.
-* **Example 4** demonstrates the new way using an **ExceptionGroup** and an **except\* clause**.
+* **Example 4** demonstrates *the new way* using an **ExceptionGroup** and an **except\* clause**.
 
 ## Disclaimers
 * In some examples below, a massive stack of exceptions are manually shoved into one try block. This isn't standard practice and you'd normally test them via separate try blocks, loops, or conditional logic. More than one error **can** occur within a single block of code, however, with those examples simulating that likelihood as a visual contrast to the examples that don't use them.
